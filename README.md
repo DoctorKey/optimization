@@ -16,3 +16,5 @@ This repository contains exercises and codes in this [book](https://link.springe
 
 [homework4](./homework/homework 4.md)
 
+[homework4](/homework/homework 4.html)
+
