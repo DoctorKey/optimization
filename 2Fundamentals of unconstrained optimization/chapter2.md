@@ -99,3 +99,75 @@ Therefore, every point on the unit circle is a limit point for $\{x_k\}$.
 ## 2.6 
 
 If $x^*$ is an isolated local minimizer, there is a neighborhood $N$ and $x^*$ is the only local minimizer in $N$. If there is a $x'$ which $f(x^*)=f(x')$, $f(x')=f(x^*)\leq f(x)$ for $x\in N$. So $x'$ is a local minimizer which conflict with the condition. So $\forall x\neq x^*, x\in N$, $f(x^*)<f(x)$. So all isolated local minimizers are strict.
+
+##2.7
+
+$$
+f(y+\alpha (x-y))-\alpha f(x)-(1-\alpha)f(y)\\
+=(y+\alpha (x-y)^T)Q(y+\alpha (x-y))-\alpha x^TQx-(1-\alpha)y^TQy\\
+=\alpha (\alpha-1)(y-x)^TQ(y-x)
+$$
+
+For all $\alpha \in [0,1]$ and $Q$ is a symmetric positive semidefinite matrix, $\alpha (\alpha-1)(y-x)^TQ(y-x) \leq 0$. So $f(x)$ is convex on the domain $R^n$.
+
+## 2.8
+
+Define $A=\{x|f(x)\leq f(t) \quad\forall t \in D\}$ and $A$ is the set of global minimizers of $f(x)$.
+$$
+\forall x_1,x_2\in A \qquad f(x_1)\leq f(t) \qquad f(x_2)\leq f(t)
+$$
+$\forall \lambda_1,\lambda_2 \geq0, \lambda_1+\lambda_2=1$. Since $f(x)$ is convex, we get $\lambda_1 f(x_1)+\lambda_2 f(x_2)\geq f(\lambda_1 x_1+\lambda_2 x_2)$
+
+Define $x_3=\lambda_1 x_1 + \lambda_2 x_2$, then $f(x_3)\leq \lambda_1 f(x_1)+\lambda_2 f(x_2)\leq \lambda_1 f(t)+ \lambda_2 f(t)=f(t) \quad \forall t\in D$
+
+So $x_3\in A$ and $A$ is a convex set.
+
+## 2.9
+
+With $x=(1,0)^T, p^T=(-1,1)$, $x+\alpha p=(1-\alpha,\alpha)^T$.
+
+With $f(x_1,x_2)=(x_1+x_2^2)^2$, $f(x+\alpha p)=(\alpha^2-\alpha+1)^2$.
+
+$\nabla f(x)=\left[\begin{array}{c}2(x_1+x_2^2)\\2(x_1+x_2^2)2x_2\end{array}\right]$, then $\nabla f(x) = (2,0)^T$. So $p^T\nabla f(x)=-2<0$ and $p$ is a descent direction.
+
+Define $g(\alpha)=(\alpha^2-\alpha+1)^2$. We should solve $\min g(\alpha)$ when $\alpha >0$.
+
+Let $g(\alpha)'=2(\alpha^2-\alpha+1)(2\alpha-1)=0$, then we get $\alpha=1/2$ which is minimizer of the problem (2.10)
+
+##2.10
+
+$$
+\nabla \widetilde{f}(z)=\frac{d \widetilde{f}(z)}{dz_j}=\frac{dx_i}{dz_j}\frac{d\widetilde{f}(z)}{dx_i}=S^T\nabla f(x)
+$$
+
+$$
+\nabla^2 \widetilde{f}(z)=\frac{d \nabla\widetilde{f}(z)}{dz_j}=\frac{dx_i}{dz_j}\frac{d\nabla \widetilde{f}(z)}{dx_i}=S^T\nabla^2f(x)S
+$$
+
+## 2.13
+
+$\forall \epsilon >0$, let $K=1/\epsilon$, $\|x_k-0\|=1/k\leq \epsilon$ for all $k \geq K$. So $x_k$ converge to zero.
+$$
+\frac{\|x_{k+1}-x^*\|}{\|x_k-x^*\|}=\frac{k}{k+1}
+$$
+$\forall r \in(0,1)$, let $k>\frac1{1-r}$, then $\frac{k}{k+1}>r$. So there no $r \in (0,1)$ satisfied when $k >K$  $\frac{k}{k+1}<r$.
+
+So $x_k$ is not Q-linearly convergent.
+
+## 2.14
+
+$$
+\frac{\|x_{k+1}-x^*\|}{\|x_k-x^*\|^2}=\frac{(0.5)^{2^{k+1}}}{((0.5)^{2^k})^2}=0.5^0=1
+$$
+
+## 2.15
+
+easy to get $x_k\rightarrow 0$. Then:
+$$
+\lim_{k\rightarrow \infty} \frac{\|x_{k+1}-x^*\|}{\|x_k-x^*\|}=\frac{\frac1{(k+1)k!}}{\frac1{k!}}=\frac1{k+1}=0
+$$
+So $x_k$ converge Q-superlinearly
+
+## 2.16
+
+easy to get $x_k\rightarrow 0$ while $(\frac14)^{2k}$ converge Q-quadratically and $\frac1k$ converget sublinearly. So $x_k$ converge R-quadratically which dominated by $(\frac14)^{2k}$.
