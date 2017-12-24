@@ -95,7 +95,7 @@ f(x)&=\|v(x)\|_{\infty}\\
 \end{align}
 $$
 
-Minimizing $$f$$ is equivalent to minimizing $$t$$ where $$|v_i(x)| \leq t, i=1,\dots,m$$. i.e., the problem can be reformulated as
+Minimizing $$f$$ is equivalent to minimizing $$t$$ where $$ |v_i(x)| \leq t, i=1,\dots,m$$. i.e., the problem can be reformulated as
 
 $$
 \begin{align}
@@ -181,7 +181,7 @@ $$
 \right],
 $$
 
-​All constraints are active at $$x^*=(0,0)$$. The number of active constraints is three, but the dimension of the problem is only two, so $$\{\nabla c_i|i\in A(x^*)\}$$ is not a linearly independent set and LICQ does not hold. However, for $$w=(1,0)$$, $$\nabla c_i(x^*)^Tw>0$$ for all $$i\in A(x^*)$$, so MFCQ does hold.
+​All constraints are active at $$x^*=(0,0)$$. The number of active constraints is three, but the dimension of the problem is only two, so $$ \{\nabla c_i | i\in A(x^*)\} $$ is not a linearly independent set and LICQ does not hold. However, for $$w=(1,0)$$, $$\nabla c_i(x^*)^Tw>0$$ for all $$i\in A(x^*)$$, so MFCQ does hold.
 
 ### 12.14*
 
