@@ -7,11 +7,14 @@ tags: [program]
 ---
 
 ![Figure_1](../1Introduction/Figure_1.png)
+
+
 $$
 \min (x_1-2)^2+(x_2-1)^2\\
 s.t. \quad x_1^2-x_2\leq 0\\
 \quad\quad\quad x_1+x_2\leq2
 $$
+
 
 ```python
 import matplotlib
