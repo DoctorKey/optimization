@@ -1,7 +1,7 @@
 ---
 layout: post
 title: steepest descent method
-category: program
+category: Program
 author: Guo-Hua Wang
 tags: [program]
 ---
