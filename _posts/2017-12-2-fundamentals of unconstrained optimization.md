@@ -93,7 +93,7 @@ $$
 
 ## 2.5
 
-With $$f(x)=||x||^2$$ and 
+With $$f(x)=\|x\|^2$$ and 
 
 $$
 x_k=\left(1+\frac1{2^k}\right)\left[\begin{array}{c}\cos k\\\sin k\end{array}\right]
@@ -111,7 +111,7 @@ $$
 f(x_{k+1})=1+\frac1{2^{k+1}}<1+\frac1{2^k}=f(x_k)
 $$
 
-For $$\forall x^*\in\{x|\|x\|^2=1\}$$, $$x^*$$ can be expressed by $$x^*=(\cos(\theta^*),\sin(\theta^*))^T$$.  Now we should proof $$x^*$$ is a limit point for $$\{x_k\}$$.
+For $$\forall x^*\in\{x\vert\|x\|^2=1\}$$, $$x^*$$ can be expressed by $$x^*=(\cos(\theta^*),\sin(\theta^*))^T$$.  Now we should proof $$x^*$$ is a limit point for $$\{x_k\}$$.
 
 Since $$\theta^*$$ is a limit point of the subsequence $$\{\xi_k\}$$ defined by
 
@@ -141,7 +141,7 @@ For all $$\alpha \in [0,1]$$ and $$Q$$ is a symmetric positive semidefinite matr
 
 ## 2.8
 
-Define $$A=\{x|f(x)\leq f(t) \quad\forall t \in D\}$$ and $$A$$ is the set of global minimizers of $$f(x)$$.
+Define $$A=\{x\vertf(x)\leq f(t) \quad\forall t \in D\}$$ and $$A$$ is the set of global minimizers of $$f(x)$$.
 
 $$
 \forall x_1,x_2\in A \qquad f(x_1)\leq f(t) \qquad f(x_2)\leq f(t)

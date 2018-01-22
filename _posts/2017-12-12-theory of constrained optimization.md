@@ -68,7 +68,7 @@ which contradicts the fact that $$x_0$$ is the minimum point in $$N(x_0)\cap \Om
 Now, let us prove that the set of global solutions is convex. Let
 
 $$
-S=\{x| x\space is \space a\space global \space solution \space to \space problem\}
+S=\{x\vert x\space is \space a\space global \space solution \space to \space problem\}
 $$
 
 and consider any $$x_1,x_2\in S$$ such that $$x_1\neq x_2$$ and $$x_3=\alpha x_1+(1-\alpha)x_2$$, $$\alpha\in (0,1)$$. By the convexity of $$f(x)$$ which is $$f(x_1) \leq f(x)$$ and $$f(x_2)\leq f(x)$$ for any $$x\in \Omega$$, we have
@@ -91,7 +91,7 @@ Recall
 $$
 \begin{align}
 f(x)&=\|v(x)\|_{\infty}\\
-&=\max|v_i(x)|, i=1,\dots,m.
+&=\max\vert v_i(x)\vert , i=1,\dots,m.
 \end{align}
 $$
 
